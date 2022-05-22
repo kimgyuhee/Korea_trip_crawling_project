@@ -1,4 +1,4 @@
-from tkinter import font
+# from tkinter import font
 # from sympy import content
 from wordcloud import WordCloud  # 워드 클라우드로 이미지 표현을 위함 
 import matplotlib.pyplot as plt  # 시각화 기능 사용을 위함 

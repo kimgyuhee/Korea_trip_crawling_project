@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from tensorboard import program
+# from tensorboard import program
 from tqdm import tqdm
 from konlpy.tag import Okt #형태소 분석 후 명사만 추출하기 위해 
 from datetime import datetime # 날짜 및 시간 조작하기 위한 모듈

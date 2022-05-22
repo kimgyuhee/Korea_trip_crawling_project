@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from django import views
+# from django import views
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -22,7 +22,7 @@ class Crawlling() :
     
     def open_chrome(self) :
         current_path = os.getcwd()
-        path = current_path+"/chromedriver.exe"
+        path = current_path+"\\chromedriver.exe"
         driver = webdriver.Chrome(path)
         driver.maximize_window() # 창 최대화
         driver.get("https://korean.visitkorea.or.kr/")
@@ -217,12 +217,12 @@ class Crawlling() :
                 self.contents.append(con)
                 # print('-------------------- 내용 수집 끝 --------------------')
 
-                print('------------------ 사진 저장 시작 -------------')
-                if (len(img_src) == 0) :
-                    print('이미지 존재하지 않음')
-                else :
-                    self.save_img(title, driver, img_src)
-                print('------------------ 사진 저장 끝 ---------------')
+                # print('------------------ 사진 저장 시작 -------------')
+                # if (len(img_src) == 0) :
+                #     print('이미지 존재하지 않음')
+                # else :
+                #     self.save_img(title, driver, img_src)
+                # print('------------------ 사진 저장 끝 ---------------')
 
                 page_count+=1
                 print('\n')
