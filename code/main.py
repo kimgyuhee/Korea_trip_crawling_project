@@ -1,15 +1,17 @@
-import pandas as pd
+import install_development_environment
+
+
+# import pandas as pd
 import os
 # from tensorboard import program
-from tqdm import tqdm
-from konlpy.tag import Okt #형태소 분석 후 명사만 추출하기 위해 
+# from tqdm import tqdm
+# from konlpy.tag import Okt #형태소 분석 후 명사만 추출하기 위해 
 from datetime import datetime # 날짜 및 시간 조작하기 위한 모듈
 
 class Main() :
 
     default_path = 'C:\\Korea_trip_crawling_project\\xlsx'
     def __init__(self) :
-        import install_development_environment
         print('='*37)
         print('     대한민국 구석구석 프로젝트')
         print('='*37)
